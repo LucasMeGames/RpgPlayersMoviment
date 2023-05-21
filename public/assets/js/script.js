@@ -16,10 +16,8 @@ var Alt = false, Shift = false;
 
 function toggleMenu() { // WORKING
     if ($("#MenuCard").is(":hidden")) {
-        console.log("s");
         $('#MenuCard').show('slide', {direction: 'right'}, 1000);
     } else {
-        console.log("n");
         $('#MenuCard').hide('slide', {direction: 'right'}, 1000);
     }
 }
@@ -80,30 +78,24 @@ function watchObjects() {
                 ui.position.top = +$(this).data('startY') + diffY / zoom
 
                 if (ui.position.left < 0) {
-                    console.log("L")
                     ui.position.left = 0;
                 }
                 if (ui.position.top < 0) {
-                    console.log("T")
 
                     ui.position.top = 0;
                 }
 
                 if ((ui.position.left + $(this).width()) * zoom > canvasWidth) {
-                    console.log("R")
-
                     ui.position.left = canvasWidth / zoom - $(this).width();
                 }
 
 
-                if (ui.position.top + $(this).height() * zoom > canvasHeight) {
-                    console.log($(this).height() - canvasHeight / zoom)
-                    //ui.position.top = canvasHeight / zoom - $(this).height();
+                if (ui.position.top + $(this).height() * zoom > canvasHeight) {//todo
+                     //ui.position.top = canvasHeight / zoom - $(this).height();
                 }
 
 
-                if ((ui.position.top + $(this).height()) * zoom > canvasHeight) {
-                    console.log("B")
+                if ((ui.position.top + $(this).height()) * zoom > canvasHeight) {//todo
                     ui.position.top = canvasHeight / zoom - $(this).height();
                 }
 
@@ -116,11 +108,6 @@ function watchObjects() {
     });
 }
 
-function Test() {
-    $('.object').each((index, val) => {
-        console.log($(val).data("data-top-key"));
-    })
-}
 
 function toggleLockMap(ToggleAll = false) { //WORKING //Função para destravar e poder mover o mapa
     if (data["Locked"]) {
@@ -167,30 +154,23 @@ function addToken() {
                 ui.position.top = +$(this).data('startY') + diffY / zoom
 
                 if (ui.position.left < 0) {
-                    console.log("L")
                     ui.position.left = 0;
                 }
                 if (ui.position.top < 0) {
-                    console.log("T")
-
                     ui.position.top = 0;
                 }
 
                 if ((ui.position.left + $(this).width()) * zoom > canvasWidth) {
-                    console.log("R")
-
                     ui.position.left = canvasWidth / zoom - $(this).width();
                 }
 
 
-                if (ui.position.top + $(this).height() * zoom > canvasHeight) {
-                    console.log($(this).height() - canvasHeight / zoom)
+                if (ui.position.top + $(this).height() * zoom > canvasHeight) {//todo
                     //ui.position.top = canvasHeight / zoom - $(this).height();
                 }
 
 
-                if ((ui.position.top + $(this).height()) * zoom > canvasHeight) {
-                    console.log("B")
+                if ((ui.position.top + $(this).height()) * zoom > canvasHeight) {//todo
                     ui.position.top = canvasHeight / zoom - $(this).height();
                 }
 
@@ -277,8 +257,6 @@ $(() => {
 
     $('.content').draggable({
         start: function (evt, ui) {
-            console.log("start");
-            console.log(ui.position.left, window.scrollY)
             $(this).data('startX', ui.position.left).data('startY', ui.position.top - window.scrollY);
         },
         drag: function (evt, ui) {
@@ -309,7 +287,6 @@ $(() => {
 
 
     $('.deleteObj').on('click', function (event, ui) {//TODO fazer funiocal
-        console.log("morrido")
         $(".object.selected").each((i, e) => {
             $(e).unbind().remove()
         })
@@ -336,7 +313,6 @@ $(() => {
             }
             if (e.key === "L" || e.key === "l") { //Bloquear, travar objecto
                 //n sei como fiz funfar
-                console.log(data["Objects"][$this.parent().data("data-top-key")]["Locked"])
                 if (data["Objects"][$this.parent().data("data-top-key")]["Locked"] === true) {
                     data["Objects"][$this.parent().data("data-top-key")]["Locked"] = false;
                     $this.parent().draggable("enable");
@@ -358,7 +334,6 @@ $(() => {
     });
 
     jQuery.fn.rotate = function (degrees) {
-        console.log($(this).parent().data("data-top-key"));
         $(this).css({transform: `rotate(${degrees}deg) scaleX(${data["Objects"][$(this).parent().data("data-top-key")]["isFlip"] ? -1 : 1})`});
         return $(this);
     };

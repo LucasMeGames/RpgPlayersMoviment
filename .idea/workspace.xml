@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="04416e44-e381-4749-b5de-b001db20219f" name="Changes" comment="Remake" />
+    <list default="true" id="04416e44-e381-4749-b5de-b001db20219f" name="Changes" comment="Remake">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/websocket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -27,6 +40,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "A:/Projetos/TOP/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "vue.rearranger.settings.migration": "true"
   }
@@ -48,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684691664092</updated>
       <workItem from="1684691667029" duration="254000" />
+      <workItem from="1684691941155" duration="500000" />
     </task>
     <task id="LOCAL-00001" summary="Remake">
       <created>1684691739696</created>
@@ -56,7 +74,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684691739696</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Remake">
+      <created>1684692000000</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684692000000</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Remake">
+      <created>1684692039733</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684692039733</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
